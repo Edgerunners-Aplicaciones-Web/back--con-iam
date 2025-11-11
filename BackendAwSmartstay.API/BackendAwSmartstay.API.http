@@ -1,0 +1,6 @@
+@BackendAwSmartstay.API_HostAddress = http://localhost:5192
+
+GET {{BackendAwSmartstay.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
