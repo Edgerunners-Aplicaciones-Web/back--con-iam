@@ -1,4 +1,4 @@
-﻿using BackendAwSmartstay.API.Shared.Domain.Model.Events;
+using BackendAwSmartstay.API.Shared.Domain.Model.Events;
 using Cortex.Mediator.Notifications;
 
 namespace BackendAwSmartstay.API.Shared.Application.Internal.EventHandlers;

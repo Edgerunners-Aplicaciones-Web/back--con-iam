@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+using BackendAwSmartstay.API.Shared.Infrastructure.Persistence.EFC.Configuration;
+using Microsoft.EntityFrameworkCore;
 
-namespace BackendAwSmartstay.API.shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+namespace BackendAwSmartstay.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
 public static class WebApplicationBuilderExtensions
 {
@@ -22,3 +23,4 @@ public static class WebApplicationBuilderExtensions
         });
     }
 }
+

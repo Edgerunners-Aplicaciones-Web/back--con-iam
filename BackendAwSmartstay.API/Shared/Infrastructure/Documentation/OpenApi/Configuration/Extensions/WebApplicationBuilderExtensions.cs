@@ -1,4 +1,4 @@
-﻿using Microsoft.OpenApi.Models;
+using Microsoft.OpenApi.Models;
 
 namespace BackendAwSmartstay.API.Shared.Infrastructure.Documentation.OpenApi.Configuration.Extensions;
 
@@ -32,3 +32,4 @@ public static class WebApplicationBuilderExtensions
         });
     }
 }
+

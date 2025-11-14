@@ -1,10 +1,18 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 
-namespace BackendAwSmartstay.API.shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
+namespace BackendAwSmartstay.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
+/// <summary>
+///     Model builder extensions for the database context
+/// </summary>
 public static class ModelBuilderExtensions
 {
-
+    /// <summary>
+    ///     Use snake case naming convention for the database context
+    /// </summary>
+    /// <param name="builder">
+    ///     The model builder for the database context
+    /// </param>
     public static void UseSnakeCaseNamingConvention(this ModelBuilder builder)
     {
         foreach (var entity in builder.Model.GetEntityTypes())
@@ -35,3 +43,4 @@ public static class ModelBuilderExtensions
         }
     }
 }
+
