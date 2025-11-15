@@ -1,21 +1,10 @@
-using Humanizer;
+﻿using Humanizer;
 
 namespace BackendAwSmartstay.API.Shared.Infrastructure.Persistence.EFC.Configuration.Extensions;
 
-/// <summary>
-///     String extensions for the database context
-/// </summary>
 public static class StringExtensions
 {
-    /// <summary>
-    ///     Convert the string to snake case
-    /// </summary>
-    /// <param name="text">
-    ///     The text to convert to snake case
-    /// </param>
-    /// <returns>
-    ///     The snake cased text
-    /// </returns>
+
     public static string ToSnakeCase(this string text)
     {
         return new string(Convert(text.GetEnumerator()).ToArray());

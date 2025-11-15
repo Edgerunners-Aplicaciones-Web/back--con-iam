@@ -1,19 +1,10 @@
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 
 namespace BackendAwSmartstay.API.Shared.Infrastructure.Interfaces.ASP.Configuration.Extensions;
 
-/// <summary>
-///     Extension methods for <see cref="string" />.
-/// </summary>
 public static partial class StringExtensions
 {
-    /// <summary>
-    ///     Converts the text to kebab case.
-    /// </summary>
-    /// <param name="text">string to convert</param>
-    /// <returns>
-    ///     The kebab case string.
-    /// </returns>
+
     public static string ToKebabCase(this string text)
     {
         if (string.IsNullOrEmpty(text))
