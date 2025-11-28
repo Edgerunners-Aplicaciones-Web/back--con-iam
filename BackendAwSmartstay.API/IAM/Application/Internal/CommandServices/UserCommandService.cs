@@ -29,8 +29,11 @@ public class UserCommandService(
     {
         var user = await userRepository.FindByUsernameAsync(command.Username);
 
-        if (user == null || !hashingService.VerifyPassword(command.Password, user.PasswordHash))
-            throw new Exception("Invalid username or password");
+        if (user == null)
+            throw new Exception($"User with username '{command.Username}' not found");
+
+        if (!hashingService.VerifyPassword(command.Password, user.PasswordHash))
+            throw new Exception("Invalid password");
 
         var token = tokenService.GenerateToken(user);
 
